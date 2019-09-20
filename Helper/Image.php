@@ -144,9 +144,6 @@ class Image extends \Magento\Catalog\Helper\Image
             if ($this->_scheduleRotate) {
                 $model->rotate($this->getAngle());
             }
-            if ($this->_scheduleResize) {
-                $model->resize();
-            }
             if ($this->_cropPosition) {
                 $this->_getModel()->setCropPosition($this->_cropPosition);
             }
